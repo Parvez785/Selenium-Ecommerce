@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CartPagesTestClasses.WishList">
+      <class name="com.ecommerce.test.Checkoutpages">
         <methods>
-          <include name="Destroy"/>
-          <include name="AddDuplicateProducts"/>
+          <include name="NavigateToCheckoutPage"/>
           <include name="Setup"/>
+          <include name="Destroy"/>
         </methods>
-      </class> <!-- CartPagesTestClasses.WishList -->
+      </class> <!-- com.ecommerce.test.Checkoutpages -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="Baseclass.TestListeners"/>
+    <listener class-name="Baseclass.listen"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="e_Commerce_testClasses.SearchTest">
+      <class name="e_Commerce_testClasses.LogoutPageTestCases">
         <methods>
-          <include name="SortProductsByAscOrder"/>
+          <include name="CheckLogoutAndLogin"/>
+          <include name="closesetup"/>
           <include name="Setup"/>
-          <include name="SearchwithoutproductName"/>
-          <include name="SortProductsByHighRating"/>
-          <include name="NoOFResult25"/>
-          <include name="SearchUsingSubcategory"/>
-          <include name="SearchAfterLogin"/>
-          <include name="SortProductsByLowPrice"/>
-          <include name="ListViewforProducts"/>
-          <include name="NoOFResult50"/>
-          <include name="NoOFResult75"/>
-          <include name="SearchWithNonExistingproductName"/>
-          <include name="SearchWithExistingproductName"/>
-          <include name="SearchusingSearchCriteriaField"/>
-          <include name="destroy"/>
-          <include name="SearchMultipeProducts"/>
-          <include name="SortProductsByDescOrder"/>
-          <include name="SortProductsByLowRating"/>
-          <include name="NoOFResult100"/>
-          <include name="CheckProdctAddedtoComparison"/>
-          <include name="SortProductsByModelZtoA"/>
-          <include name="SortProductsByHighPrice"/>
-          <include name="SortProductsByModelAtoZ"/>
+          <include name="Logout_functionAndNavigateBack"/>
+          <include name="Logout_functionalityBySideMenu"/>
+          <include name="Logout_functionality1"/>
         </methods>
-      </class> <!-- e_Commerce_testClasses.SearchTest -->
-      <class name="e_Commerce_testClasses.CompareProduct">
-        <methods>
-          <include name="NavigatetoProductComparePagefromSearch"/>
-          <include name="Setup"/>
-          <include name="DisplayproductusingGridView"/>
-          <include name="Destroy"/>
-        </methods>
-      </class> <!-- e_Commerce_testClasses.CompareProduct -->
-      <class name="e_Commerce_testClasses.ResetPass">
-        <methods>
-          <include name="Setup"/>
-          <include name="ResetPasswordwithincorrectEmail"/>
-          <include name="Destroy"/>
-        </methods>
-      </class> <!-- e_Commerce_testClasses.ResetPass -->
+      </class> <!-- e_Commerce_testClasses.LogoutPageTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
