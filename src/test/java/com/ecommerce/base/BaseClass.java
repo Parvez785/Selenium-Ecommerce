@@ -23,7 +23,7 @@ public class BaseClass {
 	protected String LoginPage = BaseURL + "?route=account/login";
 	protected String HomePage = BaseURL + "?route=common/home";
 	// Logins
-	protected String UserName = "test+787@gmail.com";
+	protected String UserName = "test+786@gmail.com";
 	protected String Password = "Ba7hvQN@Z@S7YW";
 	protected String InvalidUSerName = "test@gmail.com";
 	protected String InvalidPassword = "Ba7hvQN@Z@S7Y";

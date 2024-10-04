@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.ecommerce.base.BaseClass;
 import com.ecommerce.pages.AddtocartPageObject;
 import com.ecommerce.pages.CheckoutPage;
+import com.ecommerce.pages.LoginPagefactory;
 import com.ecommerce.pages.Search;
 import com.ecommerce.pages.ShoppingCartPageObject;
 
@@ -23,16 +24,17 @@ public class Checkoutpages extends BaseClass {
 	AddtocartPageObject Obj;
 	WebDriverWait wait;
 	ShoppingCartPageObject ShoppingCart;
+	LoginPagefactory login;
 
-	
 	@BeforeMethod
 	public void Setup() {
 		driver = new ChromeDriver();
 		driver.get(BaseURL);
 		Objects = new CheckoutPage(driver);
-		 searchObj = new Search(driver);
-		 ShoppingCart= new ShoppingCartPageObject(driver);
-		 Obj = new AddtocartPageObject(driver, wait);
+		searchObj = new Search(driver);
+		ShoppingCart = new ShoppingCartPageObject(driver);
+		login = new LoginPagefactory(driver);
+		Obj = new AddtocartPageObject(driver, wait);
 		driver.manage().window().maximize();
 	}
 
@@ -44,6 +46,8 @@ public class Checkoutpages extends BaseClass {
 				.getText();
 		Assert.assertTrue(EmptyMsg.contains("Your shopping cart is empty!"));
 	}
+
+	// Navigating to Cart Page post adding product
 	@Test
 	public void NavigateToCheckoutPage() throws InterruptedException {
 		searchObj.SearchInput("iMac");
@@ -51,13 +55,28 @@ public class Checkoutpages extends BaseClass {
 		Obj.AddTocart();
 		Thread.sleep(1000);
 		ShoppingCart.ShoppingCartLink();
-		
+		Objects.Checkoutbtnclick();
+		String Title = driver.getTitle();
+		Assert.assertEquals(Title, "Checkout");
 	}
 
+	// Navigating to Checkout Page using Cart button after login
+
+	@Test
+	public void navigateUsingCheckoutbtn() throws InterruptedException {
+		login.GetLoginMenu();
+		login.GetLoginMenu(UserName, Password);
+		Thread.sleep(2000);
+		Objects.ClickMenubtn();
+		Objects.Clickcartlink();
+		String Title = driver.getTitle();
+		Assert.assertEquals(Title, "Checkout");
+	}
+
+	//There is no Checkout Page in Website
 	@AfterMethod
 	public void Destroy() {
 		driver.quit();
 	}
-	
-	
+
 }

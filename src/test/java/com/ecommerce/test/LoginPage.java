@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,11 +27,11 @@ public class LoginPage extends BaseClass {
 	LoginPagefactory PageMethods;
 
 	@BeforeMethod
-	public void LoginSetup()  {
+	public void LoginSetup() {
 		driver = new ChromeDriver();
 		driver.navigate().to(BaseURL);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
+		 driver.manage().window().maximize();
 		PageMethods = new LoginPagefactory(driver);
 	}
 
@@ -38,12 +39,13 @@ public class LoginPage extends BaseClass {
 	public void LoginWithcredentials() throws InterruptedException {
 		Thread.sleep(2000);
 		PageMethods.GetLoginMenu();
+		Thread.sleep(4000);
 		PageMethods.GetLoginMenu(UserName, Password);
 		String Title = driver.getTitle();
 		Assert.assertEquals(Title, "My Account");
 	}
 
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void LoginWithKeyboardkeys() {
 		PageMethods.GetLoginMenu();
 		PageMethods.GetLoginMenuwithKeys(UserName, Password);
@@ -51,7 +53,7 @@ public class LoginPage extends BaseClass {
 		Assert.assertEquals(Title, "My Account");
 	}
 
-	@Test(timeOut=1000)
+	@Test(timeOut = 1000)
 	public void LoginWithInvalidcredentials() {
 
 		PageMethods.GetLoginMenu();

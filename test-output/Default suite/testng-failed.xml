@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.test.Checkoutpages">
+      <class name="com.ecommerce.test.Myaccountinformation">
         <methods>
-          <include name="NavigateToCheckoutPage"/>
+          <include name="updateDetails"/>
           <include name="Setup"/>
-          <include name="Destroy"/>
+          <include name="destroy"/>
         </methods>
-      </class> <!-- com.ecommerce.test.Checkoutpages -->
+      </class> <!-- com.ecommerce.test.Myaccountinformation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
