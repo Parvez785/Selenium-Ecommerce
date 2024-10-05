@@ -2,29 +2,57 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-03T12:25:20 IST" name="Default suite" finished-at="2024-10-03T12:25:38 IST" duration-ms="18042">
+  <suite started-at="2024-10-05T12:34:17 IST" name="Default suite" finished-at="2024-10-05T12:35:33 IST" duration-ms="75684">
     <groups>
     </groups>
-    <test started-at="2024-10-03T12:25:20 IST" name="Default test" finished-at="2024-10-03T12:25:38 IST" duration-ms="18042">
-      <class name="com.ecommerce.test.Myaccountinformation">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.ecommerce.test.Myaccountinformation@210ab13f]" started-at="2024-10-03T12:25:20 IST" name="Setup" finished-at="2024-10-03T12:25:26 IST" duration-ms="6364" status="PASS">
+    <test started-at="2024-10-05T12:34:17 IST" name="Default test" finished-at="2024-10-05T12:35:33 IST" duration-ms="75684">
+      <class name="com.ecommerce.test.Forgotpassword">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.ecommerce.test.Forgotpassword@5b38c1ec]" started-at="2024-10-05T12:34:17 IST" name="Setup" finished-at="2024-10-05T12:35:20 IST" duration-ms="62646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="updateDetails()[pri:0, instance:com.ecommerce.test.Myaccountinformation@210ab13f]" started-at="2024-10-03T12:25:26 IST" name="updateDetails" finished-at="2024-10-03T12:25:37 IST" duration-ms="11178" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="IncompletePassword()[pri:0, instance:com.ecommerce.test.Forgotpassword@5b38c1ec]" started-at="2024-10-05T12:35:20 IST" name="IncompletePassword" finished-at="2024-10-05T12:35:31 IST" duration-ms="11547" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [My Account Information] but found [My Account]]]>
+              <![CDATA[Unable to locate element: //a[normalize-space()='Password']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7efb6737-8c93-4c2b-a13a-e20c8be59753, findElement {value=//a[normalize-space()='Password'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0, moz:accessibilityChecks: false, moz:buildID: 20240923135042, moz:debuggerAddress: 127.0.0.1:18991, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11240, moz:profile: C:\Users\Parvez Shaikh\AppD..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:18991/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 7efb6737-8c93-4c2b-a13a-e20c8be59753]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [My Account Information] but found [My Account]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ecommerce.test.Myaccountinformation.updateDetails(Myaccountinformation.java:75)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[normalize-space()='Password']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7efb6737-8c93-4c2b-a13a-e20c8be59753, findElement {value=//a[normalize-space()='Password'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0, moz:accessibilityChecks: false, moz:buildID: 20240923135042, moz:debuggerAddress: 127.0.0.1:18991, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11240, moz:profile: C:\Users\Parvez Shaikh\AppD..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:18991/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 7efb6737-8c93-4c2b-a13a-e20c8be59753
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.ecommerce.pages.ForgotPasswordPageObject.clickSidebarlink(ForgotPasswordPageObject.java:42)
+at com.ecommerce.test.Forgotpassword.IncompletePassword(Forgotpassword.java:86)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,15 +83,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateDetails -->
-        <test-method is-config="true" signature="destroy()[pri:0, instance:com.ecommerce.test.Myaccountinformation@210ab13f]" started-at="2024-10-03T12:25:37 IST" name="destroy" finished-at="2024-10-03T12:25:38 IST" duration-ms="409" status="PASS">
+        </test-method> <!-- IncompletePassword -->
+        <test-method is-config="true" signature="Destroy()[pri:0, instance:com.ecommerce.test.Forgotpassword@5b38c1ec]" started-at="2024-10-05T12:35:31 IST" name="Destroy" finished-at="2024-10-05T12:35:33 IST" duration-ms="1417" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- destroy -->
-      </class> <!-- com.ecommerce.test.Myaccountinformation -->
+        </test-method> <!-- Destroy -->
+      </class> <!-- com.ecommerce.test.Forgotpassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

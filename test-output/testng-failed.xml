@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.test.Myaccountinformation">
+      <class name="com.ecommerce.test.Forgotpassword">
         <methods>
-          <include name="updateDetails"/>
+          <include name="IncompletePassword"/>
+          <include name="Destroy"/>
           <include name="Setup"/>
-          <include name="destroy"/>
         </methods>
-      </class> <!-- com.ecommerce.test.Myaccountinformation -->
+      </class> <!-- com.ecommerce.test.Forgotpassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

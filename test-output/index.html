@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Parvez Shaikh\AppData\Local\Temp\testng-eclipse--1843636923\testng-customsuite.xml</span>
+                    <span>C:\Users\Parvez Shaikh\AppData\Local\Temp\testng-eclipse-1170323997\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.ecommerce.test.Myaccountinformation" class="method navigator-link" hash-for-method="updateDetails">updateDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.ecommerce.test.Forgotpassword" class="method navigator-link" hash-for-method="IncompletePassword">IncompletePassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,22 +121,43 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.ecommerce.test.Myaccountinformation</span>
+              <span class="class-name">com.ecommerce.test.Forgotpassword</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="updateDetails">
-                  </a> <!-- updateDetails -->
-                  <span class="method-name">updateDetails</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [My Account Information] but found [My Account]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ecommerce.test.Myaccountinformation.updateDetails(Myaccountinformation.java:75)
+                  <a name="IncompletePassword">
+                  </a> <!-- IncompletePassword -->
+                  <span class="method-name">IncompletePassword</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[normalize-space()=&apos;Password&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7efb6737-8c93-4c2b-a13a-e20c8be59753, findElement {value=//a[normalize-space()=&apos;Password&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0, moz:accessibilityChecks: false, moz:buildID: 20240923135042, moz:debuggerAddress: 127.0.0.1:18991, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11240, moz:profile: C:\Users\Parvez Shaikh\AppD..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:18991/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 7efb6737-8c93-4c2b-a13a-e20c8be59753
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.ecommerce.pages.ForgotPasswordPageObject.clickSidebarlink(ForgotPasswordPageObject.java:42)
+	at com.ecommerce.test.Forgotpassword.IncompletePassword(Forgotpassword.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,7 +195,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Parvez Shaikh\AppData\Local\Temp\testng-eclipse--1843636923\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Parvez Shaikh\AppData\Local\Temp\testng-eclipse-1170323997\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -183,11 +204,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ecommerce.test.Myaccountinformation&quot;&gt;
+      &lt;class name=&quot;com.ecommerce.test.Forgotpassword&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;updateDetails&quot;/&gt;
+          &lt;include name=&quot;IncompletePassword&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.ecommerce.test.Myaccountinformation --&gt;
+      &lt;/class&gt; &lt;!-- com.ecommerce.test.Forgotpassword --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -229,9 +250,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'updateDetails')
-data.setCell(0, 2, 'com.ecommerce.test.Myaccountinformation')
-data.setCell(0, 3, 11178);
+data.setCell(0, 1, 'IncompletePassword')
+data.setCell(0, 2, 'com.ecommerce.test.Forgotpassword')
+data.setCell(0, 3, 11547);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -251,15 +272,19 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.ecommerce.test.Myaccountinformation</span>
+              <span class="ignored-class-name">com.ecommerce.test.Forgotpassword</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">NavigateToAccountinformationfromSideLink</span>
+                <span class="ignored-method-name">NavigatetoMyAccountPage</span>
                 <br/>
-                <span class="ignored-method-name">NavigateToAccountinformation</span>
+                <span class="ignored-method-name">NavigateToChangePasswordPage</span>
+                <br/>
+                <span class="ignored-method-name">InvalidconfirmPassword</span>
+                <br/>
+                <span class="ignored-method-name">UpdatePassword</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -271,7 +296,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ecommerce.test.Myaccountinformation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ecommerce.test.Forgotpassword</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
@@ -279,13 +304,13 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">updateDetails</span>
-                <span class="method-start">6366 ms</span>
+                <span class="method-name">IncompletePassword</span>
+                <span class="method-start">62646 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">destroy</span>
-                <span class="method-start">17559 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">Destroy</span>
+                <span class="method-start">74193 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

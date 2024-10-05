@@ -36,6 +36,14 @@ public class MyAccountInformation {
 	@FindBy(xpath="//div[@class='list-group']//a[text()='Logout']")
 	WebElement LogoutLink;
 	
+	@FindBy(xpath="//a[normalize-space()='Back']")
+	WebElement backbtn;
+	
+	public void clickBackbutton() {
+		backbtn.click();
+	}
+	
+	
 	public void clickLogoutLink() {
 		LogoutLink.click();
 	}
